@@ -1,0 +1,188 @@
+.content {
+    margin-top: 100px;
+    display: grid;
+}
+.inputText {
+    box-sizing: border-box;
+    justify-self: center;
+    width: 700px;
+    height: 110px;
+    padding: 6px 12px 30px 12px;
+    border-radius: 10px;
+    /* padding: 0 10px; */
+    background-color: rgb(230, 230, 230);
+    overflow: hidden;   
+    display: grid;
+    /* display: grid; */
+
+}
+.words {
+    overflow-wrap: break-word;
+    width: 680px;
+    align-self: center;
+    transition: all 0.1 s;
+}
+.word {
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-family: Times New Roman, Times, serif;
+    font-size: 2.2em;
+    line-height: 50px;
+    align-self: center;
+    color: black;
+    border-radius: 3px;
+    justify-self: center;
+    padding: 0 7px 3px 7px;
+    margin: 0 4px;
+}
+.word span {
+    align-self: center;
+    justify-self: center;
+}
+.inputBlock {
+    margin-top: 40px;
+    justify-self: center;
+}
+.inputBlock input {
+    height: 50px;
+    width: 500px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    padding: 5px 15px;
+}
+.pass {
+    color: green;
+}
+.descriptionBlock {
+    margin-top: 40px;
+    width: 700px;
+    height: 150px;
+    justify-self: center;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-column-gap: 20px;
+}
+.failedWordBlock {
+    padding: 10px;
+    display: grid;  
+    grid-template-rows: 90px 20px 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+.failedWordsImg {
+    width: 50px;
+    align-self: start;
+    justify-self: center;
+}
+.failedWord {
+    align-self: center;
+    color: #a19a9a;
+    justify-self: center;
+}
+.failedWordCount {
+    color: red;
+    align-self: center;
+    justify-self: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.timAndCountWordBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20px;
+}
+.informationBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+.restartBlock {
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.restartImg {
+    align-self: center;
+    justify-self: center;
+    width: 30px;
+    
+}
+.timeBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.time {
+    align-self: end;
+    justify-self: center;
+    font-size: 25px;
+    color: rgb(255, 242, 242);
+
+}
+.second {
+    align-self: start;
+    color: rgb(255, 242, 242)   ;
+    font-size: 22px;
+    justify-self: center;
+    
+}
+.languageBlock {
+    cursor: pointer;
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+}
+.language {
+    align-self: center;
+    justify-self: center;
+    font-size: 25px;
+    color: #cdcdcd;
+}
+
+.countWordBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 5px;
+    background-color: white;
+}
+.countWord {
+    color: #ff7b00;
+    font-size: 25px;
+    align-self: end;
+    justify-self: center;
+}
+.countWordTitle {
+    color: #a19a9a ;
+    font-size: 16px;
+    align-self: flex-start;
+    justify-self: center;
+}
+.correctWordsBlock {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 90px 20px 40px;
+}
+.correctWords {
+    align-self: center;
+    color: #a19a9a;
+    justify-self: center;
+}
+.correctWordsCount {
+    color: green;
+    align-self: center;
+    justify-self: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.currectWordsImg {
+    height: 60px;
+    align-self: center;
+    justify-self: center;
+}

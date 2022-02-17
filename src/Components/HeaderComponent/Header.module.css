@@ -1,0 +1,15 @@
+.header {
+    display: grid;
+    width: 100vw;
+    height: 60px;
+    background-color: black;
+    opacity: 0.9;
+    grid-template-columns: 1fr;
+}
+.logoBlock {
+    align-self: center;
+    margin-left: 100px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
