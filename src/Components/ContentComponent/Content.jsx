@@ -72,7 +72,6 @@ const Content = (props) => {
         setTop(50)
         setIsFatching(false)
         setTime(60)
-        shuffle(array)
         document.getElementById('words').style.marginTop='0px'
 
         for (let i = 0; i < array.length; i++) {
@@ -124,7 +123,7 @@ const Content = (props) => {
                 </div>
                 <div className={s.timAndCountWordBlock} >
                     <div className={s.informationBlock} >
-                        <div onClick={() => {restart()}} className={s.restartBlock} >
+                        <div onClick={() => {shuffle(array); restart();}} className={s.restartBlock} >
                             <img className={s.restartImg} src={Restart} alt="restart" />
                         </div>
                         <div className={s.timeBlock} >
