@@ -3,6 +3,7 @@ import s from  './App.module.css';
 import Header from './Components/HeaderComponent/Header'
 import Content from './Components/ContentComponent/Content'
 import {arrayRus, arrayEng} from './Utils/Words'
+import {shuffle} from './Utils/RandomSortArray'
 
 function App() {
   
@@ -11,7 +12,7 @@ function App() {
   return (
         <div className={s.page} >
           <Header />
-          <Content language={language} setLanguage={setLanguage}  array={language === 'Ru' ? arrayRus : arrayEng } />
+          <Content language={language} setLanguage={setLanguage}  array={shuffle(language === 'Ru' ? arrayRus : arrayEng )} />
         </div>
   );
 }

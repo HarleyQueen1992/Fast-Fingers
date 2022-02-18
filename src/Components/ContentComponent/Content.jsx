@@ -3,8 +3,10 @@ import s from './Content.module.css'
 import Wrong from './../../Assets/wrong.png'
 import Correct from './../../Assets/correct.png'
 import Restart from './../../Assets/restart.png'
+import {shuffle} from './../../Utils/RandomSortArray'
 
 let timer = null
+
 const Content = (props) => {
 
     const array = props.array
@@ -70,6 +72,7 @@ const Content = (props) => {
         setTop(50)
         setIsFatching(false)
         setTime(60)
+        shuffle(array)
         document.getElementById('words').style.marginTop='0px'
 
         for (let i = 0; i < array.length; i++) {
